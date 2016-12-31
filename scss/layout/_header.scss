@@ -1,0 +1,95 @@
+/***************
+NAV
+***************/
+
+#fixed_nav {
+	@include mobile {
+	  background: $dark_blue;
+		max-width: 1200px;
+		height: 55px;
+		margin: 0 auto;
+		margin-top: -5px;
+		position: fixed;
+		top: 0;
+		z-index: 100;
+	 	border-bottom: 2px solid $white;
+	}
+	@include tablet {
+		display: none;
+	}
+}
+
+.logo_nav {
+	float: left;
+	max-width: 82%;
+	margin-top: 5px;
+	margin-left: 5px;
+}
+
+.nav {
+	@include mobile {
+	  background: $dark_blue;
+		display: none;
+		width: 100%;
+		max-width: 1200px;;
+		z-index: 100;
+	 	margin: 0 auto;
+	 	margin-top: 45px;
+	 	padding-left: 0;
+	 	position: fixed;
+	 	top: 0;
+	 	border-bottom: 2px solid $white;
+	}
+	@include tablet {
+		display: inline-block;
+		height: 55px;
+		left: 0;
+		right: 0;
+		margin-top: -5px;
+		border-bottom: none;
+		text-align: right;
+	}
+}
+
+.nav  {
+	ul {
+ 		list-style: none;
+	}
+	li {
+		@include mobile{
+			width: 100%;
+		}
+		@include tablet {
+			display: inline-block;
+			width: 130px;
+		}
+	}
+	li a {
+		display: block;
+		padding: 10px;
+		margin: 10px auto 5px;
+	}
+}
+
+.nav a.selected {
+  color: $white;
+}
+
+.nav_wrapper_outside {
+	@include mobile {
+		width: 100%;
+		position: fixed;
+		left: 0;
+		top: 0;
+		margin-top: 0;
+		background: $dark_blue;
+	}
+	@include tablet {
+		border-bottom: 2px solid $white;
+		height: 52px;
+	}
+}
+
+
+
+

@@ -1,0 +1,17 @@
+/***************
+MENU
+***************/
+
+.hidden {
+	display: none;
+}
+
+#menu,
+#close {
+	margin: 10px;
+	margin-top: 13px;
+	float: right;
+	fill: $white;
+	cursor: pointer;
+}
+

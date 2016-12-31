@@ -1,0 +1,44 @@
+/***************
+GENERAL
+***************/
+
+* {
+   box-sizing: border-box;
+   text-align: center;
+   color: $white;
+}
+
+body {
+  background: $dark_blue;
+}
+
+.wrapper {
+  margin: 5px auto;
+  max-width: 100%;
+}
+
+div {
+  margin: 5px auto;
+  width: 100%;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+	font-weight: normal;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+
+
+

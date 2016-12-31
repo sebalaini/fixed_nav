@@ -1,0 +1,13 @@
+/***************
+HOME
+***************/
+
+.top {
+	@include mobile {
+		max-width: 1200px;
+		margin: 70px auto;
+	}
+	@include tablet {
+		height: 99vh;
+	}
+}
