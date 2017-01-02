@@ -72,7 +72,14 @@ NAV
 }
 
 .nav a.selected {
-  color: $white;
+	@include mobile {
+	  color: $black;
+		font-weight: bold;
+		background: $white;
+	}
+	@include tablet{
+		border-radius: 10px;
+	}
 }
 
 .nav_wrapper_outside {
@@ -89,7 +96,3 @@ NAV
 		height: 52px;
 	}
 }
-
-
-
-
